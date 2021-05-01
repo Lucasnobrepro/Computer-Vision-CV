@@ -1,10 +1,11 @@
+# Bibliotecas
 import cv2
 
 # Criando rastreador;
 tracker = cv2.TrackerCSRT_create()
 
 # Capturando video;
-video = cv2.VideoCapture("")
+video = cv2.VideoCapture("video.mp4")
 
 # Lendo video
 ok, frame = video.read()
