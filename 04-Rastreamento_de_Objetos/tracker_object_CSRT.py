@@ -5,13 +5,18 @@ import cv2
 tracker = cv2.TrackerCSRT_create()
 
 # Capturando video;
-video = cv2.VideoCapture("video.mp4")
+video = cv2.VideoCapture('video2.mp4')
 
 # Lendo video
 ok, frame = video.read()
 
 # Selecionando bounding box do objeto a ser rastreado;
 bbox = cv2.selectROI(frame)
+
+# Iinicia o rastreador
+ok = tracker.init(frame,bbox)
+print(ok)
+
 
 # Para ler todos os frames do video;
 while True:
@@ -21,7 +26,7 @@ while True:
     if not ok:
         break
 
-    # Atualizando bbox;
+    # Atualizando bbox;=
     ok, bbox = tracker.update(frame)
 
     if ok:
@@ -35,7 +40,7 @@ while True:
     else:
         # Adicona o texto caso não possa mais fazer o rastreamento do objeto;
         cv2.putText(frame, "Fail in tracking..", (100,80),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)           
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2) 
 
     # Plota a imagem
     cv2.imshow("Tracking", frame)
