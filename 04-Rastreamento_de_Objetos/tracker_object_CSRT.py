@@ -5,7 +5,7 @@ import cv2
 tracker = cv2.TrackerCSRT_create()
 
 # Capturando video;
-video = cv2.VideoCapture('video2.mp4')
+video = cv2.VideoCapture('video1.mp4')
 
 # Lendo video
 ok, frame = video.read()
