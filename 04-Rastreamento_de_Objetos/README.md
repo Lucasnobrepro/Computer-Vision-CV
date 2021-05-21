@@ -15,5 +15,11 @@ Os recursos necessarios para realizar a construção desse projeto foram:
 ### CSR
 No Filtro de *Discriminative Correlation Filter with Channel and Spatial Reliability* (DCF-CSR), usamos o mapa de confiabilidade espacial para ajustar o suporte do filtro à parte da região selecionada do quadro para rastreamento. Isso garante a ampliação e a localização da região selecionada e o rastreamento aprimorado das regiões ou objetos não retangulares. Ele usa apenas 2 recursos padrão (HoGs e Colornames). Ele também opera a fps comparativamente mais baixo (25 fps, mas oferece maior precisão para rastreamento de objetos.
 
+<img src="/Figuras/rastreamento1.gif" width="800" height="562" />
 
-<img src="demonstracao.gif" width="800" height="562" />
+### Para executar
+Digite no terminal o comando abaixo:
+```
+python tracker_object_CSRT.py
+```
+
