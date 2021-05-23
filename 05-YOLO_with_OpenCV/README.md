@@ -15,7 +15,7 @@ Os recursos necessarios para realizar a construção desse projeto foram:
     * Python3, foi a linguagem utilizada para desenvolver o projeto.
     * OpenCV, uma das bibliotecas mais conhecidas para desenvolvimento de Visão Computacional;    
     * YOLOv4
-Baixe os pesos do YOLOv4 para a pasta weights
+Baixe os pesos do YOLOv4 para a pasta weights, os comandos abaixo são no terminal:
 
 ``` shell
 # Entre na pasta
@@ -51,7 +51,7 @@ Argumentos:
 | --weights  | weights/yolov4.weights | Caminho para os pesos do YOLO4               | Sim         |
 | --cfg      | cfg/yolov4.cfg         | Caminho para as configurações da CNN do YOLO | Sim         |
 | --labels   | cfg/coco.names         | Caminho para as configurações da CNN do YOLO | Sim         |
-| --resize   | width_max = 600        | Realizar redimensionamento da imagem para imagens muito grandes | Opcional|
+| --resize   | True                   | Realizar redimensionamento da imagem para imagens muito grandes | Opcional|
 | --show_text | False                 | Mostra saídas                                | Opcional    |
 | --show_image| False                 | Mostra a imagem ao final da detecção         | Opcional    |
 | --threshold| 0.5                    | Threshold para probabilidade de existir um objeto| Opcional    |
