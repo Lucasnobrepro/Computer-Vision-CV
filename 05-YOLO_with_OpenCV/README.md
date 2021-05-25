@@ -30,9 +30,10 @@ Outros sistemas de detecção adaptam classificadores ou localizadores para real
 
 O YOLO utiliza uma abordagem totalmente diferente. Aplicando uma única rede neural à imagem completa. Essa rede divide a imagem em regiões e prevê caixas delimitadoras e probabilidades para cada região. Essas caixas delimitadoras são ponderadas pelas probabilidades previstas.
 
-Exemplo de uma detecção utilizando YOLO:
+Exemplos de uma detecção utilizando YOLO:
 
-<img src="/Figuras/deteccao_image.jpg"/>
+<img src="/Figuras/deteccao_image_1.jpg"/> 
+<img src="/Figuras/deteccao_image_2.jpg"/>
 
 ### Para executar
 Digite no terminal o comando abaixo:

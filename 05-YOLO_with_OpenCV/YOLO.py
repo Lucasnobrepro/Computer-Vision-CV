@@ -118,7 +118,6 @@ def yolo(image):
     cv2.imwrite("resultado.jpg", image)
     return image
 
-
 def args_parse(argv=None):
     parser = argparse.ArgumentParser(description='YOLO with OpenCV pre-trained model')
     parser.add_argument("--weights", 
@@ -156,32 +155,12 @@ def args_parse(argv=None):
 
 if __name__ == "__main__":
     args_parse()
-    np.random.seed(10) # Fixa a a semente aleatoria;
-
+    # np.random.seed(10) # Fixa a a semente aleatoria;
+    print(args.weights)
+    print(args.cfg)
+    
     image = cv2.imread(args.image)
     image = yolo(image)    
     
     if args.show_image == "True":
         showImage(image)
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
