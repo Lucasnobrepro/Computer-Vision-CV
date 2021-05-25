@@ -30,7 +30,7 @@ Baixe os pesos do Mask R-CNN para a pasta weights, digite os comandos abaixo no 
 # Entre na pasta
 cd weights
 
-# Baixe os pesos, yolov4.weights > 200MB
+# Baixe os pesos, mask r-cnn > 250MB
 wget https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.2/mask_rcnn_coco.h5
 
 ```
