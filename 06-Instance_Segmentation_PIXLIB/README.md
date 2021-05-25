@@ -1,9 +1,8 @@
-## 05 - Semantic Segmentation
+## 06 - Semantic Segmentation com PixelLib
 
 Neste projeto é feito a segmentaao semantica de objetos em uma imagem. O objetos são detectados pelo utilizando a bilioteca  PIXELLIB utilizando o modelo MASK R-CNN destaca objetos.
 
-## PIXELLIB
-PixelLib é uma biblioteca criada para realizar a segmentação de imagens e vídeos usando poucas linhas de código. É uma biblioteca flexível criada para permitir fácil integração da segmentação de imagem e vídeo em soluções de software.
+
 
 ### Requisitos
 Os recursos necessarios para realizar a construção desse projeto foram:
@@ -14,7 +13,7 @@ Os recursos necessarios para realizar a construção desse projeto foram:
     * imgaug
 
 Para instalar, digite no terminal:
-```
+``` shell
 sudo apt update
 
 pip3 install pip 
@@ -35,10 +34,8 @@ cd weights
 wget https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.2/mask_rcnn_coco.h5
 
 ```
-### You only look once (YOLO)
-Outros sistemas de detecção adaptam classificadores ou localizadores para realizar a detecção. Eles aplicam o modelo a uma imagem em vários locais e escalas. As regiões de alta pontuação da imagem são consideradas detecções.
-
-O YOLO utiliza uma abordagem totalmente diferente. Aplicando uma única rede neural à imagem completa. Essa rede divide a imagem em regiões e prevê caixas delimitadoras e probabilidades para cada região. Essas caixas delimitadoras são ponderadas pelas probabilidades previstas.
+## PIXELLIB
+PixelLib é uma biblioteca criada para realizar a segmentação de imagens e vídeos usando poucas linhas de código. É uma biblioteca flexível criada para permitir fácil integração da segmentação de imagem e vídeo em soluções de software.
 
 Exemplo de uma detecção utilizando YOLO:
 
